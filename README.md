@@ -30,5 +30,20 @@ Preprocessing: The image is resized and normalized to match the model's input re
 Model Prediction: The pre-trained model processes the image and predicts the class of disease (or "Healthy").
 Response: The API returns the predicted disease class along with a confidence score.
 
+#Upload file to the predict Endpoint & check the trained model(Late_Blight)
+
 ![Upload file to the predict Endpoint & check the trained model(Late_Blight)](images/FasterAPI_Endpoint_Late_Blight.png)
+
+#Upload file to the predict Endpoint & check the trained model(Early_Blight)
+
 ![Upload file to the predict Endpoint & check the trained model(Early_Blight)](images/FasterAPI_Endpoint_Late_Blight.png)
+
+#To run the Faster Endpoint application
+
+1.download the neccssary dependencies
+
+2.navigate to the directory (api) & run the below command to start the application
+
+```
+uvicorn main:app --host localhost --port 8000 --reload
+```
