@@ -1,4 +1,4 @@
-# Module Name: SE4050 - Deep Learning Assignment
+# SE4050 - Deep Learning Assignment
 
 Project Overview
 This project focuses on solving the problem of plant disease classification using the Plant Village dataset(Potato images) from Kaggle. We have developed and compared four distinct Convolutional Neural Network (CNN) architectures to classify different plant diseases. This is a supervised learning task aimed at detecting and classifying plant diseases of potatos from leaf images.
