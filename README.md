@@ -20,3 +20,15 @@ IT21178054 - Kumari T.A.T.N
 IT21360428 - Monali G.M.N.
 
 
+**Potato Disease Identification API**
+
+This project uses a machine learning model to identify diseases in potato leaves via a web-based API using FastAPI. The API allows users to upload images of potato leaves and returns a prediction indicating whether the plant is healthy or affected by Early Blight or Late Blight.
+
+How It Works:
+Image Upload: Users upload an image of a potato leaf to the /predict endpoint.
+Preprocessing: The image is resized and normalized to match the model's input requirements.
+Model Prediction: The pre-trained model processes the image and predicts the class of disease (or "Healthy").
+Response: The API returns the predicted disease class along with a confidence score.
+
+![Upload file to the predict Endpoint & check the trained model(Late_Blight)](images/FasterAPI_Endpoint_Late_Blight.png)
+![Upload file to the predict Endpoint & check the trained model(Early_Blight)](images/FasterAPI_Endpoint_Late_Blight.png)
