@@ -349,3 +349,31 @@ model.compile(
         metrics.Recall(name='recall')
     ]
 )
+
+pip install seaborn
+
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+
+# Step 1: Generate predictions on the test dataset
+y_true = []
+y_pred = []
+
+for images, labels in test_ds:
+    predictions = model.predict(images)
+    predicted_classes = np.argmax(predictions, axis=1)
+
+    y_true.extend(labels.numpy())
+    y_pred.extend(predicted_classes)
+
+# Step 2: Calculate the confusion matrix
+conf_matrix = confusion_matrix(y_true, y_pred)
+
+# Step 3: Plot the confusion matrix
+plt.figure(figsize=(10, 8))
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues',
+            xticklabels=class_names, yticklabels=class_names)
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.title('Confusion Matrix')
+plt.show()
