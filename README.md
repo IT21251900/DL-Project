@@ -47,3 +47,40 @@ Response: The API returns the predicted disease class along with a confidence sc
 ```
 uvicorn main:app --host localhost --port 8000 --reload
 ```
+
+**Potato Disease Identification React Application**
+
+We have developed a React application that helps identify diseases in potatoes using machine learning models. The system integrates a trained model deployed via FastAPI, with the model training done on Google Colab.
+
+#Upload file to the frontend file uploader & check the trained model(Late_Blight)
+
+![Upload file to the frontend file uploader & check the trained model(Late_Blight)](images/frontend_application_late_blight_disease_classification.png)
+
+#Upload file to the frontend file uploader & check the trained model(Early_Blight)
+
+![Upload file to the frontend file uploader & check the trained model(Early_Blight)](images/fronetnd_application_early_blight_disease_classification.png)
+
+#Upload file to the frontend file uploader & check the trained model(healthy)
+
+![Upload file to the frontend file uploader & check the trained model(healthy)](images/frontend_application_healthy.png)
+
+#To run the application 
+
+1.run the backend server(FasterAPI - potato-disease-application-python-api)
+
+2.set the environmet
+
+```
+$env:NODE_OPTIONS="--openssl-legacy-provider"
+```
+
+3.Install the dependencies
+
+```
+npm install
+```
+
+```
+npm audit fix
+```
+
