@@ -1,3 +1,6 @@
 
 potato-disease-application/api/__pycache__/main.cpython-311.pyc
 react-potato-application/package-lock.json
+
+*/__pycache__
+*/venv
